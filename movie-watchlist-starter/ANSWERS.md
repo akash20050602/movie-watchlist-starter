@@ -1,4 +1,7 @@
 Github resporitory link
+
+https://github.com/akash20050602/movie-watchlist-starter
+
 # My answers: Movie Watchlist workshop
 
 Name:
@@ -32,11 +35,11 @@ My answer: Using push()bis a bug because it changes watchlist array directly. Re
 
 **2.3 (Explain)** The heading shows how many movies are still to watch. Why does that number not need its own useState?
 
-My answer:
+My answer: The number of movies still to watch does not need its own useState because it can be calculated from the watchlist. Whenever the watchlist changes, React renders the component again and recalculates the number using filter() and length.
 
 **2.4 (Explain)** Why do list items use key={item.id} and not the index?
 
-My answer:
+My answer: We use key={item.id} because each movie has a unique ID that stays the same even when the list changes. Using the index can cause problems when movies are deleted or reordered because their positions change. Unique IDs help React correctly identify and update each movie.
 
 ## Task 3
 
