@@ -1,3 +1,4 @@
+Github resporitory link
 # My answers: Movie Watchlist workshop
 
 Name:
@@ -23,11 +24,11 @@ My answer: Because {setFavourite(true)} runs immediatly when React renders the c
 
 **2.1 (Explain)** What does it mean for an input to be controlled? Describe what happens from one key press to the new text appearing in the box.
 
-My answer:
+My answer: A controlled input means its value is managed by React state. When i type a letter, the OnChange function update the state using setText, and React displays the updated text in the input box.
 
 **2.2 (Explain)** Why is watchlist.push(item) followed by setWatchlist(watchlist) a bug?
 
-My answer:
+My answer: Using push()bis a bug because it changes watchlist array directly. React may not update the screen because the array is still the same object. we should create a new array using the spread operator (...) and pass it to setWatchlist.
 
 **2.3 (Explain)** The heading shows how many movies are still to watch. Why does that number not need its own useState?
 
